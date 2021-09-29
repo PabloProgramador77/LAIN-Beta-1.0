@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.menu{
+    padding: 10px;
+    width: 20%;
+    height: 100vh;
+    display: block;
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
+    float: left;
+    overflow: hidden;
+}
+
+.menu ul{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.menu ul li{
+    padding: 10px 5px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-style: normal;
+    font-weight: 600;
+    transition: 0.3s all ease;
+}
+
+.menu ul li > ul{
+    display: none;
+    visibility: hidden;
+}
+
+.menu ul li:hover >ul{
+    display: block;
+    visibility: visible;
+}
+
+.menu ul li a:hover{
+    cursor: pointer;
+    color: darkblue;
+    margin-left: 10px;
+}
+
+.menu ul li .logout:hover{
+    color: red;
+}
+
+.ventana{
+    width: 80%;
+    height: 100vh;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    float: right;
+    overflow: auto;
+}
