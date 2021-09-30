@@ -93,6 +93,22 @@
 
         }
 
+        static public function getEmpleadosDB($table){
+
+            $stmt=database::conectDatabase()->prepare(
+                "SELECT * FROM $table ORDER BY fecha DESC"
+            );
+
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+            $stmt->close();
+
+            $stmt=null;
+
+        }
+
     }
 
 ?>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/estilos_empleados.css">
+    <link rel="stylesheet" href="../css/estilos_empleados.css">
     <title></title>
 </head>
 <body onload="document.getElementById('nombre').focus()">
@@ -12,33 +12,32 @@
         <h2 class="titulo">Administración de Empleados</h2>
     </div>
     <div class="banner">
-        <p>Alta</p>
-        <small>Nuevo Empleado</small>
-        <span>Se recomienda llenar todos los campos.<img src="../../media/icons/"></span>
+        <p>Alta de Empleado</p>
+        <span>Todos los campos son obligatorios.<img src="../media/icons/"></span>
     </div>
-    <form action="../../middlewares/mdlwrEmpleados.php" class="registro" method="POST">
+    <form action="../middlewares/mdlwrEmpleados.php" class="registro" method="POST">
         <div class="campo">
-            <img src="../../media/icons/user-silhouette.svg">
+            <img src="../media/icons/user-silhouette.svg">
             <label>Nombre(s):</label>
             <input type="text" id="nombre" name="nombre"  required >
         </div>
         <div class="campo">
-            <img src="../../media/icons/user-silhouette.svg">
+            <img src="../media/icons/user-silhouette.svg">
             <label>Apellido Paterno:</label>
             <input type="text" id="paterno" name="paterno"  required >
         </div>
         <div class="campo">
-            <img src="../../media/icons/user-silhouette.svg">
+            <img src="../media/icons/user-silhouette.svg">
             <label>Apellido Materno:</label>
             <input type="text" id="materno" name="materno"  required >
         </div>
         <div class="campo">
-            <img src="../../media/icons/user-silhouette.svg">
+            <img src="../media/icons/user-silhouette.svg">
             <label>Edad:</label>
             <input type="text" id="edad" name="edad"  required >
         </div>
         <div class="campo">
-            <img src="../../media/icons/user-silhouette.svg">
+            <img src="../media/icons/user-silhouette.svg">
             <label>Genero:</label>
             <select name="genero" id="genero">
                 <option value="masculino">Masculino</option>
@@ -46,12 +45,12 @@
             </select>
         </div>
         <div class="campo">
-            <img src="../../media/icons/user-silhouette.svg">
+            <img src="../media/icons/user-silhouette.svg">
             <label>Fecha de nacimiento:</label>
             <input type="date" name="nacimiento" id="nacimiento">
         </div>
         <div class="campo">
-            <img src="../../media/icons/user-silhouette.svg">
+            <img src="../media/icons/user-silhouette.svg">
             <label>Estado civil:</label>
             <select name="civil" id="civil">
                 <option value="soltero">Soltero(a)</option>
@@ -62,31 +61,31 @@
             </select>
         </div>
         <div class="campo">
-            <img src="../../media/icons/user-silhouette.svg">
+            <img src="../media/icons/user-silhouette.svg">
             <label>CURP:</label>
             <input type="text" id="curp" name="curp"  required >
         </div>
         <div class="campo">
-            <img src="../../media/icons/user-silhouette.svg">
+            <img src="../media/icons/user-silhouette.svg">
             <label>NSS:</label>
             <input type="text" id="nss" name="nss"  required >
         </div>
         <div class="campo">
-            <img src="../../media/icons/user-silhouette.svg">
+            <img src="../media/icons/user-silhouette.svg">
             <label>RFC:</label>
             <input type="text" id="rfc" name="rfc"  required >
         </div>
         <div class="alert">
-            <span><img src="../../media/icons/edit.svg">Dato Repetido. Intenta con otro diferente por favor.</span>
+            <span><img src="../media/icons/edit.svg">Dato Repetido. Intenta con otro diferente por favor.</span>
         </div>
         <div class="boton">
             <input type="submit" value="Guardar">
         </div>
     </form>
-    <script src="../../js/jquery-3.min.js"></script>
-    <script src="../../js/verifyCurp.js"></script>
-    <script src="../../js/verifyNss.js"></script>
-    <script src="../../js/verifyRfc.js"></script>
+    <script src="../js/jquery-3.min.js"></script>
+    <script src="../js/verifyCurp.js"></script>
+    <script src="../js/verifyNss.js"></script>
+    <script src="../js/verifyRfc.js"></script>
     <script type="text/javascript">
         if(window.history.replaceState){
             window.history.replaceState(null, null, window.location.href);

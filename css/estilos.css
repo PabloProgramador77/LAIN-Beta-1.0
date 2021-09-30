@@ -6,17 +6,16 @@
 }
 
 .menu{
-    padding: 10px;
     width: 20%;
     height: 100vh;
     display: block;
-    background-color: whitesmoke;
-    border: 1px solid lightgray;
+    background-color: darkblue;
     float: left;
     overflow: hidden;
 }
 
 .menu ul{
+    padding: 0px 0px 0px 10px;
     width: 100%;
     height: auto;
     display: block;
@@ -24,21 +23,30 @@
 }
 
 .menu ul li{
-    padding: 10px 5px;
+    padding: 10px 0px;
     width: 100%;
     height: auto;
     display: block;
     margin: auto;
+    transition: 0.3s all ease;
+    margin: 20px 0px;
+}
+
+.menu ul li:hover{
+    background-color: white;
+    color: darkblue;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
 .menu ul li a{
     text-decoration: none;
-    color: black;
     font-size: 18px;
     letter-spacing: 1px;
     font-style: normal;
     font-weight: 600;
     transition: 0.3s all ease;
+    color: white;
 }
 
 .menu ul li > ul{
@@ -49,6 +57,7 @@
 .menu ul li:hover >ul{
     display: block;
     visibility: visible;
+    margin-left: 20px;
 }
 
 .menu ul li a:hover{

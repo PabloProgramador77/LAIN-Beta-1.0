@@ -7,7 +7,7 @@
     if($obj==true){
 
         $obj=null;
-        header("location:../views/empleados/home.html");
+        header("location:../views/home.php");
 
     }else{
 

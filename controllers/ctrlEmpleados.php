@@ -42,6 +42,18 @@
 
         }
 
+        static public function getEmpleados(){
+
+            $table="empleados";
+
+            $obj=empleadosMdl::getEmpleadosDB($table);
+
+            return $obj;
+
+            $obj=null;
+
+        }
+
     }
 
 ?>

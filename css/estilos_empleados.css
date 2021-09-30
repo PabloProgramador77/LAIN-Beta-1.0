@@ -30,7 +30,7 @@
 .banner{
     padding: 5px;
     width: 100%;
-    height: 55px;
+    height: 50px;
     border: 1px solid lightgray;
     overflow: hidden;
     display: block;
@@ -45,6 +45,8 @@
     font-weight: 600;
     color: black;
     letter-spacing: 1px;
+    float: left;
+    overflow: hidden;
 }
 
 .banner small{
@@ -61,7 +63,6 @@
 }
 
 .banner span{
-    padding: 5px;
     width: 50%;
     height: auto;
     display: block;
@@ -73,11 +74,34 @@
     font-weight: 400;
     text-align: center;
     overflow: hidden;
-    margin-top: -15px;
+    padding: 5px 0px;
+}
+
+.banner .boton{
+    float: left;
+    overflow: hidden;
+}
+
+.banner .boton a{
+    padding: 5px;
+    width: 50%;
+    height: auto;
+    display: block;
+    float: left;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: darkgreen;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .banner span img,
-.registro .alert span img{
+.registro .alert span img,
+.banner a img{
     width: 25px;
     height: 25px;
     display: block;
@@ -163,7 +187,8 @@
     text-align: center;
 }
 
-.registro .boton{
+.registro .boton,
+.banner .boton{
     padding: 5px;
     width: 50%;
     height: auto;
@@ -187,4 +212,72 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
+}
+
+.contenedor,
+.contenedor .dataEmpleados thead,
+.contenedor .dataEmpleados tbody{
+    padding: 5px;
+    width: 100vw;
+    height: auto;
+    display: block;
+}
+
+.contenedor .dataEmpleados tbody{
+    overflow: auto;
+}
+
+.contenedor .dataEmpleados{
+    width: 100vw;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.contenedor .dataEmpleados thead td{
+    width: 24.5vw;
+    height: auto;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: black;
+    float: left;
+    overflow: hidden;
+    padding: 3px 0px;
+    background-color: lightsteelblue;
+}
+
+.contenedor .dataEmpleados tbody tr td{
+    width: 24.5vw;
+    height: auto;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: black;
+    float: left;
+    overflow: hidden;
+    padding: 3px 0px;
+}
+
+.contenedor .dataEmpleados tbody tr{
+    padding: 3px 0px;
+    width: 99vw;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 2px;
+    overflow: hidden;
+    border-bottom: 1px solid lightgray;
+}
+
+.contenedor .dataEmpleados tbody tr:nth-child(2n){
+    background-color: lightgray;
 }
